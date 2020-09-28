@@ -7,7 +7,7 @@
 
 ### Clone the repository and install the dependencies
 
-    git clone
+    git clone https://github.com/moinuddin14/Azure-AKS-ACI-Selenium-Grid.git && cd Azure-AKS-ACI-Selenium-Grid && npm i
 
 ### Create a cluster with one AKS node and one Virtual node
 
