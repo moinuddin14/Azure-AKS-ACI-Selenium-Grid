@@ -1,0 +1,1 @@
+export MYSCRIPT_RESULT=$(kubectl get service | awk '{print $4}' | awk 'FNR == 2 {print}')

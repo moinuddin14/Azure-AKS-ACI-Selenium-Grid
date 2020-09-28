@@ -1,0 +1,19 @@
+{
+  "name": "azure-aks-aci-selenium-grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "updateHubOnChromeFirefox": "node updateYaml.js",
+    "createCluster": "node createAksCluster.js",
+    "fetchHubUrl": "export HUB_URL=$(kubectl get service | awk '{print $4}' | awk 'FNR == 3 {print}')",
+    "cleanupResourceGroups": "node cleanupResourceGroups.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "js-yaml": "3.14.0",
+    "shelljs": "0.8.4"
+  }
+}
